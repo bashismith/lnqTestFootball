@@ -3,9 +3,11 @@ import Navbar from './components/Navbar';
 import Timer from './components/Timer';
 import EmailModal from'./components/EmailModal';
 import Footer from './components/Footer';
+import ThreeDFootball from './components/ThreeD';
 import logo from './images/lnq-bluecircle.png';
 import Tap from './sound/Tap.mp3';
 import Ambient from './sound/Ambient.mp3';
+
 
 
 const App = () => {
@@ -38,7 +40,8 @@ const App = () => {
         <EmailModal setShowModal={setShowModal}/>
         :
         <div className='timerDiv'>
-         <Timer/>
+         {/* <Timer/> */}
+         <ThreeDFootball/>
          <div className='wearable'>
           <span>THE WEARABLE INTERNET</span>
          </div>
