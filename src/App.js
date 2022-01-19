@@ -41,9 +41,9 @@ const App = () => {
         :
         <div className='timerDiv'>
          {/* <Timer/> */}
-         <ThreeDFootball/>
+         {clicked ?<ThreeDFootball/> : null }
          <div className='wearable'>
-          <span>THE WEARABLE INTERNET</span>
+          <span>OUR METAVERSE</span>
          </div>
          {clicked ? <img alt='pulseLogo' className='tap'src={logo} onClick={openModal}/> : null}
         </div>
