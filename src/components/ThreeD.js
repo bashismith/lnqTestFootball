@@ -1,7 +1,8 @@
 import * as THREE from 'three'
 import React, { Suspense, useState , useRef} from 'react'
 import { Canvas, useFrame, useLoader } from '@react-three/fiber'
-import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader';
+import { OrbitControls } from '@react-three/drei'
+import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader'
 
 
 const Football = ({position}) => {
@@ -47,6 +48,7 @@ const ThreeDFootball = () => {
         <Football position={[0,0,0]}/>
         {/* <Aura position={[0,1,0]}/> */}
       </Suspense>
+      {/* <OrbitControls enableZoom={false}/> */}
   </Canvas>
   )
 };
