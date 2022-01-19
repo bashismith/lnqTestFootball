@@ -14,7 +14,7 @@ const Football = ({position}) => {
     footballRef.current.rotation.z = THREE.MathUtils.lerp(footballRef.current.rotation.z, Math.sin(t / 4) / 20, 0.1)
     footballRef.current.position.y = THREE.MathUtils.lerp(footballRef.current.position.y, (-5 + Math.sin(t)) / 2.5, 0.1)
   })
-  const fbx = useLoader(FBXLoader, 'justtex.fbx' );
+  const fbx = useLoader(FBXLoader, 'inverted.fbx' );
   return (
     <mesh ref={footballRef} position={position} rotation={[2.2,0,0]}>
     <primitive object={fbx} scale={90}/>

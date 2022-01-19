@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <>
       <nav>
-      <a href="/" id='lnq'>LNQ</a>
+      <a href="/" id='lnq' color='#0155FD'>LNQ</a>
     </nav>
     </>
   )
