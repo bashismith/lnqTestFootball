@@ -31,7 +31,7 @@ const App = () => {
     <div>
       {clicked ? null :
     <div className="overlay" onClick={enterClick}>
-      <h1>Tap to Enter.</h1>
+      <h1 className="spin"></h1>
     </div>
       }
       <>

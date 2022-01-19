@@ -34,6 +34,24 @@ body,
   background-color: #0155fd;
   color: white;
 }
+.spin:after {
+  content:"";
+  animation: spin 3.5s linear forwards;
+}
+
+@keyframes spin {
+  0% { content:"Ambient."; }
+  10% { content:"Authentic."; }
+  /* 20% { content:"Inclusive."; } */
+  20% { content:"Individuality."; }
+  30% { content:"Access."; }
+  40% { content: "Interaction."; }
+  50% { content: "Exchange."; }
+  60% { content: "Empathy."; }
+  70% { content: "Innovation."; }
+  80% { content: "LNQ."; }
+  100% {content:"Tap to Enter."}
+}
 
 /* nav bar styles */
 nav {
