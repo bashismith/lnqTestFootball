@@ -32,7 +32,7 @@ app.post('/api/emailSubmit', async (req,res) => {
     run()
 
     try{
-      const response = await mailchimp.lists.addListMember("ac3bfabd1e", {
+      const response = await mailchimp.lists.addListMember("bd3ba85c93", {
           email_address: email,
           status: "subscribed",
         });
